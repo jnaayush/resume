@@ -1,0 +1,216 @@
+  
+\documentclass[a4paper, 10pt, oneside]{article}
+\usepackage{soul} % Used for the title name
+\usepackage{titlesec}
+\usepackage{marvosym} % add the symbols for email and phone contact data
+\usepackage{fancyhdr} % Required for the footer
+\usepackage{tabularx} % Nicer table style than the default
+\usepackage{courier}
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+\usepackage{fontawesome}
+%\definecolor{headings}{HTML}{1e6a1d} % Dark green color for headings
+\definecolor{headings}{HTML}{000000} %dark black
+%\definecolor{text1}{HTML}{474747} % Main document font color, off-black
+%\definecolor{text1}{HTML}{494949}
+\definecolor{text1}{HTML}{000000}
+\usepackage[none]{hyphenat} % Prevents hyphenation in text
+\usepackage{tfrupee}
+\usepackage{amssymb}
+
+
+
+\usepackage[margin=10mm,bottom=20mm]{geometry}
+\topmargin=-6.8em
+\linespread{1.1} % Line spacing
+
+% Sections formatting
+\titleformat{\section}{\color{headings} \vspace{-0.7em}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\pagestyle{fancy}
+
+% Prevents overfull hbox and vbox
+\hbadness=10000
+\hfuzz=50pt
+\vbadness=10000
+\vfuzz=50pt
+
+
+% add the symbols for email and phone contact data
+\fancyhf{}
+
+\renewcommand\headrulewidth{0pt} % Size of the header rule
+\renewcommand\footrulewidth{0.000pt} % Size of the footer rule
+\newcommand{\headingspace}{\vspace{9em}}
+\newcommand{\bulltetspace}{\vspace{-0.3em}}
+\usepackage[pdfborder={0 0 0},bookmarks=true,pdftitle={Aayush Jain's CV},pdfauthor={Aayush Jain},pdfsubject={Curriculum Vitae},pdfcreator={www.google.com},pdfproducer={www.google.com}]{hyperref}
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%%%%%%  NAME AND CONTACT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\color{headings}\textsc{\Huge{{aayush jain}}} \\
+\vspace{0.0em}
+\color{text1}{\Large\Telefon} (617) 849-0948 \hfill \hspace{3.3em}137, Park Drive, Boston 02215 \hfill {\Large\Letter} \href{mailto:jain.aa@husky.neu.edu.com}{jain.aa@husky.neu.edu} 
+
+\vspace{-0.0em}
+{\Large\faGithub} \href{https://github.com/jnaayush}{\ jnaayush}
+\hfill \hspace{3em} {\fontseries{b}\selectfont Available: January - August 2019}  
+ \hspace{7.8em} {\Large\faLinkedin} \href{https://www.linkedin.com/in/aayush-jain-37319048/}{\ aayush-jain-37319048}
+
+%%%%%%  EDUCATION  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-1.2em}
+\section{\color{headings}education}
+\vspace{-0.5em}
+\color{headings}{\textbf{NORTHEASTERN UNIVERSITY}, BOSTON, MA} \hfill {Expected Apr 2020}\\
+\raggedright \textbf{College of Computer and Information Science}\\
+Candidate for Master of Science in Computer Science\hfill {GPA 3.89/4}\\
+\begin{itemize}
+\vspace{-0.7em}
+\item[-]\raggedright{Course Work:} Computer Systems, Algorithms, Object Oriented Design, Discrete and Data Structure
+\vspace{-0.7em}
+\item[] Machine Learning (Ongoing), Information Retrieval (Ongoing) \\
+\end{itemize}
+
+\color{headings}{\textbf{INDIAN INSTITUTE OF TECHNOLOGY (IIT)}, KHARAGPUR, INDIA} \hfill {Jul 2009 - Jun 2014}\\
+\color{text1}{Bachelors (Honors) \& Masters (Honors) of Science in Exploration Geophysics} \hfill\\% {GPA 8.01/10}\\
+\begin{itemize}
+\vspace{-0.7em}
+\item[-] \raggedright{Relevant Courses:} Programming and Data Structure, Partial Differential Eqn, Transform Calculus, Inverse Theory\\
+\vspace{-0.7 em}
+\end{itemize}
+\end{center}
+
+
+
+%%%%%%  ACADEMIC PROJECT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-0.5em}
+\begin{center}
+\section{\color{headings}academic projects}
+\vspace{-0.5em}
+
+$-$ \color{headings}{Performance Analysis of Sorting Algorithms } | Northeastern University  \hfill Jul 2018 - Aug 2018\\
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-] Analyzed three sorting algorithms on parameters such as cache misses, page faults etc. using \textit{libperf} in C\\
+\bulltetspace
+\item[-] Wrote Python script for automation for sort selection, data generation and result plotting through matplotlib \\
+\bulltetspace
+\item[-] Utilized GCC compiler hooks for measurements and found quick sort to be 20\% more efficient than merge sort
+\vspace{0.0em}
+\end{itemize}
+
+\vspace{-0.5em}
+$-$ \color{headings}{Thread safe memory allocator based on pool allocation strategy} | Northeastern University \hfill Jun 2018 - Jul 2018\\
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-] Implemented memory allocator utilizing \textit{pthreads} employable through compile-time inter-positioning \\
+\bulltetspace
+\item[-] Maintained multiple arenas containing several free lists of size 256KB each in pool allocator
+\vspace{0.0em}
+\end{itemize}
+
+\vspace{-0.5em}
+$-$ \color{headings}{Animation generator based on MVC design pattern} | Northeastern University \hfill March 2018 - Apr 2018\\
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-] Pair-programmed to generate GUI based SVG animation viewer and its text transcript by processing input file\\
+\bulltetspace
+\item[-] Implemented the MVC design pattern in Java to store parsed data and generate different views based on user input
+\vspace{0.0em}
+\end{itemize}
+
+
+%%%%%%  COMPUTER SKILLS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-1.5em}
+\section{\color{headings}technical knowledge}
+\vspace{-0.5em}
+\color{text1}
+\raggedright
+\begin{tabular}{l l}
+Languages: & C, Java, Python, HTML, CSS\\
+Systems: & UNIX, Windows, Macintosh OS\\
+IDE: & IntelliJ Idea, Xcode, Vim\\
+\end{tabular}
+
+
+%%%%%%  WORK EXPERIENCE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.5em}
+\section{\color{headings}work experience}
+\vspace{-0.5em}
+$-$ \color{headings}{Teaching Assistant} | Northeastern University, Boston, MA \hfill Jan 2018 - Present\\
+
+
+\begin{itemize} 
+\bulltetspace
+\item[-] Courses: Discrete and Data Structure, Algorithms, Computer Systems, Object Oriented Design\\
+\bulltetspace
+\color{text1}
+\item[-] Guided 30+ students to help reinforce concepts, complete assignments and improve performance\\
+\bulltetspace
+\item[-] Graded 300+ assignments, labs \& quizzes and provided feedback to students \& instructor on course progress
+\end{itemize}
+
+\vspace{-0.4em}
+$-$ \color{headings}{Product Developer} | SensoVision Systems, Bangalore, India \hfill Aug 2016 - Aug 2017\\
+\vspace{-0.2em}
+\hspace{1.5em }Sensovision is a fast growing early stage startup working in the field of computer vision -  \href{http://sensoviz.com/}{http://www.sensoviz.com}
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-]  Envisioned and built an optical sorting machine using \color{headings}OpenCV to eliminate manual intervention in quality control \\
+\bulltetspace
+\item[-] Defined hardware specifications, negotiated with suppliers and procured camera \& illumination systems \\
+\bulltetspace
+\item[-] Extended open source softwares \textit{OpenSfm} and \textit{Q Ground Control} to add multiple custom features \\
+\bulltetspace
+\item[-] Re-designed and built company website resulting in an increase in hit rate by 2x
+
+\end{itemize}
+\vspace{-0.4em}
+$-$ \color{headings}{Teaching Associate} | R.A.C.E., Bhopal, India \hfill May 2015 - Jul 2016\\
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-] Taught Mathematics \& prepared practice material, received high remarks for creativity of classroom lessons\\
+\end{itemize}
+
+\vspace{-0.4em}
+$-$ \color{headings}{Geophysicist} | Central Mine Planning and Design Institute, Nagpur, India \hfill Aug 2014 - May 2015\\
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[-] Delineated coal deposits through field surveys, analysis \& interpretation of well-logging and electrical profiling data\\ 
+\bulltetspace
+\item[-] Saved $\approx$ \faInr 1M in combined drill bit cost and man hours by locating and avoiding subsurface volcanic rocks\\
+\bulltetspace
+\end{itemize}
+\end{center}
+
+\vspace{-0.5em}
+\section{\color{headings}leadership experience | extracirricular}
+\color{text1}
+\begin{center}
+\begin{itemize}
+\bulltetspace
+\item[-] Mentored and guided a group of students to build an autonomous robot and taught basics of micro-controllers\\
+\bulltetspace
+\item[-] Led a team of 7 for organizing and executing basketball competition in annual sports fest of IIT Kharagpur\\
+\bulltetspace
+\item[-] Organized an image-processing event in Kshitij 2010 drawing participation from all over India\\
+\bulltetspace
+\item[-] Guitar enthusiast, have played at competitions during the undergraduate years
+
+\bulltetspace
+\end{itemize}
+\end{center}
+\vspace{-1em}
+\end{document}

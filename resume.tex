@@ -42,7 +42,7 @@
 \renewcommand\headrulewidth{0pt} % Size of the header rule
 \renewcommand\footrulewidth{0.000pt} % Size of the footer rule
 \newcommand{\headingspace}{\vspace{9em}}
-\newcommand{\bulltetspace}{\vspace{-0.3em}}
+\newcommand{\bulltetspace}{\vspace{-0.2em}}
 \usepackage[pdfborder={0 0 0},bookmarks=true,pdftitle={Aayush Jain's CV},pdfauthor={Aayush Jain},pdfsubject={Curriculum Vitae},pdfcreator={www.google.com},pdfproducer={www.google.com}]{hyperref}
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -57,12 +57,12 @@
 \color{text1}{\Large\Telefon} (617) 849-0948 \hfill \hspace{3.3em}137, Park Drive, Boston 02215 \hfill {\Large\Letter} \href{mailto:jain.aa@husky.neu.edu.com}{jain.aa@husky.neu.edu} 
 
 \vspace{-0.0em}
-{\Large\faGithub} \href{https://github.com/jnaayush}{\ jnaayush}
+%{\Large\faGithub} \href{https://github.com/jnaayush}{\ jnaayush}
 \hfill \hspace{3em} {\fontseries{b}\selectfont Available: January - August 2019}  
  \hspace{7.8em} {\Large\faLinkedin} \href{https://www.linkedin.com/in/aayush-jain-37319048/}{\ aayush-jain-37319048}
 
 %%%%%%  EDUCATION  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-1.2em}
+\vspace{-1em}
 \section{\color{headings}education}
 \vspace{-0.5em}
 \color{headings}{\textbf{NORTHEASTERN UNIVERSITY}, BOSTON, MA} \hfill {Expected Apr 2020}\\
@@ -88,57 +88,80 @@ Candidate for Master of Science in Computer Science\hfill {GPA 3.89/4}\\
 
 %%%%%%  ACADEMIC PROJECT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{-0.5em}
+\vspace{-0.3em}
 \begin{center}
 \section{\color{headings}academic projects}
 \vspace{-0.5em}
 
-$-$ \color{headings}{Performance Analysis of Sorting Algorithms } | Northeastern University  \hfill Jul 2018 - Aug 2018\\
+%$-$ \color{headings}{Focussed web crawler} {(Python, Beautiful Soup)}  \hfill Jul 2018 - Aug 2018\\
+%\color{text1}
+%\begin{itemize}
+%\bulltetspace
+%\item[-] Making a web crawler with seed as wikipedia.com and with crawl depth of 6\\
+%\end{itemize}
+
+$-$ \color{headings}{Performance Analysis of Sorting Algorithms} \textit{(C, Python, libperf, matplotlib, numpy)}  \hfill Jul 2018 - Aug 2018
 \color{text1}
+\vspace{-0.3em}
 \begin{itemize}
 \bulltetspace
-\item[-] Analyzed three sorting algorithms on parameters such as cache misses, page faults etc. using \textit{libperf} in C\\
+\item[-] Developed a tool to analyze sorting algorithms on metrics such as cache misses, page faults etc. using \textit{libperf} in C\\
 \bulltetspace
-\item[-] Wrote Python script for automation for sort selection, data generation and result plotting through matplotlib \\
+\item[-] Wrote Python script for automation for selecting sort, generating data and plotting results through matplotlib \\
 \bulltetspace
-\item[-] Utilized GCC compiler hooks for measurements and found quick sort to be 20\% more efficient than merge sort
+\item[-] Utilized GCC compiler hooks to study 3 sorts and found quick sort to be 20\% more efficient than merge sort
 \vspace{0.0em}
 \end{itemize}
 
-\vspace{-0.5em}
-$-$ \color{headings}{Thread safe memory allocator based on pool allocation strategy} | Northeastern University \hfill Jun 2018 - Jul 2018\\
+%\vspace{-0.3em}
+$-$ \color{headings}{Animation generator based on MVC design pattern} \textit{(Java, Swing, Awt, Xml)} \hfill March 2018 - Apr 2018
 \color{text1}
-\begin{itemize}
-\bulltetspace
-\item[-] Implemented memory allocator utilizing \textit{pthreads} employable through compile-time inter-positioning \\
-\bulltetspace
-\item[-] Maintained multiple arenas containing several free lists of size 256KB each in pool allocator
-\vspace{0.0em}
-\end{itemize}
-
-\vspace{-0.5em}
-$-$ \color{headings}{Animation generator based on MVC design pattern} | Northeastern University \hfill March 2018 - Apr 2018\\
-\color{text1}
+\vspace{-0.3em}
 \begin{itemize}
 \bulltetspace
 \item[-] Pair-programmed to generate GUI based SVG animation viewer and its text transcript by processing input file\\
 \bulltetspace
-\item[-] Implemented the MVC design pattern in Java to store parsed data and generate different views based on user input
+\item[-] Followed MVC design pattern to store parsed data and generate different views based on user input
+\vspace{0.0em}
+\end{itemize}
+
+%\vspace{-0.3em}
+$-$ \color{headings}{Data Analysis} \textit{(Java, Linear regression, K-means clustering)} \hfill Jan 2018 - Feb 2018
+\color{text1}
+\vspace{-0.3em}
+\begin{itemize}
+\bulltetspace
+\item[-] Implemented linear regression for best fit line using mean squared error cost function\\
+\bulltetspace
+\item[-] Clustered points in 2-D plane implementing \textit{k-means} clustering algorithm
 \vspace{0.0em}
 \end{itemize}
 
 
-%%%%%%  COMPUTER SKILLS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{-0.3em}
+$-$ \color{headings}{Explode} : Robotics Competition, Kshitij 2010 \textit{(C, Embedded Systems, AVR, microcontroller)} \hfill Dec 2009 - Jan 2010
+\color{text1}
+\vspace{-0.3em}
+\begin{itemize}
+\bulltetspace
+\item[-] Built circuits \& wrote code for autonomous robots to navigate grid, detect and avoid land mines\\
+\bulltetspace
+\item[-] Finished $2^{nd}$ in largest robotics competition in Eastern India along with 3 team members
+\vspace{0.0em}
+\end {itemize}
 
-\vspace{-1.5em}
+%%%%%%  technical knowledge  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-1em}
 \section{\color{headings}technical knowledge}
 \vspace{-0.5em}
 \color{text1}
 \raggedright
 \begin{tabular}{l l}
 Languages: & C, Java, Python, HTML, CSS\\
-Systems: & UNIX, Windows, Macintosh OS\\
-IDE: & IntelliJ Idea, Xcode, Vim\\
+%add Course algorithms%
+%Systems: & UNIX, Windows, Macintosh OS\\
+%IDE: & IntelliJ Idea, Xcode, Vim\\
 \end{tabular}
 
 
@@ -146,46 +169,49 @@ IDE: & IntelliJ Idea, Xcode, Vim\\
 \vspace{-0.5em}
 \section{\color{headings}work experience}
 \vspace{-0.5em}
-$-$ \color{headings}{Teaching Assistant} | Northeastern University, Boston, MA \hfill Jan 2018 - Present\\
-
-
+$-$ \color{headings}{Teaching Assistant} | Northeastern University, Boston, MA \hfill Jan 2018 - Present
+\vspace{-0.3em}
 \begin{itemize} 
 \bulltetspace
 \item[-] Courses: Discrete and Data Structure, Algorithms, Computer Systems, Object Oriented Design\\
 \bulltetspace
 \color{text1}
-\item[-] Guided 30+ students to help reinforce concepts, complete assignments and improve performance\\
+\item[-] Guiding students to help reinforce concepts, complete assignments and improve performance\\
 \bulltetspace
-\item[-] Graded 300+ assignments, labs \& quizzes and provided feedback to students \& instructor on course progress
+\item[-] Assisting professor in grading assignments, conducting labs \& quizzes and monitored students' progress\\
 \end{itemize}
 
-\vspace{-0.4em}
-$-$ \color{headings}{Product Developer} | SensoVision Systems, Bangalore, India \hfill Aug 2016 - Aug 2017\\
-\vspace{-0.2em}
-\hspace{1.5em }Sensovision is a fast growing early stage startup working in the field of computer vision -  \href{http://sensoviz.com/}{http://www.sensoviz.com}
+%\vspace{-0.4em}
+$-$ \color{headings}{Product Developer} | SensoVision Systems, Bangalore, India \hfill Aug 2016 - Aug 2017
+\vspace{-0.3em}
 \color{text1}
 \begin{itemize}
 \bulltetspace
-\item[-]  Envisioned and built an optical sorting machine using \color{headings}OpenCV to eliminate manual intervention in quality control \\
+\item[] Sensovision is a fast growing early stage startup working in the field of computer vision -  \href{http://sensoviz.com/}{http://www.sensoviz.com}\\
+\bulltetspace
+\item[-] Envisioned and built an optical sorting machine using \color{headings}OpenCV to eliminate manual intervention in quality control \\
 \bulltetspace
 \item[-] Defined hardware specifications, negotiated with suppliers and procured camera \& illumination systems \\
 \bulltetspace
-\item[-] Extended open source softwares \textit{OpenSfm} and \textit{Q Ground Control} to add multiple custom features \\
+\item[-] Extended open source softwares to add multiple custom features required for in-house products\\
 \bulltetspace
 \item[-] Re-designed and built company website resulting in an increase in hit rate by 2x
 
 \end{itemize}
-\vspace{-0.4em}
-$-$ \color{headings}{Teaching Associate} | R.A.C.E., Bhopal, India \hfill May 2015 - Jul 2016\\
+
+%\vspace{-0.4em}
+$-$ \color{headings}{Teaching Associate} | R.A.C.E., Bhopal, India \hfill May 2015 - Jul 2016
 \color{text1}
+\vspace{-0.3em}
 \begin{itemize}
 \bulltetspace
 \item[-] Taught Mathematics \& prepared practice material, received high remarks for creativity of classroom lessons\\
 \end{itemize}
 
-\vspace{-0.4em}
-$-$ \color{headings}{Geophysicist} | Central Mine Planning and Design Institute, Nagpur, India \hfill Aug 2014 - May 2015\\
+%\vspace{-0.4em}
+$-$ \color{headings}{Geophysicist} | Central Mine Planning and Design Institute, Nagpur, India \hfill Aug 2014 - May 2015
 \color{text1}
+\vspace{-0.3em}
 \begin{itemize}
 \bulltetspace
 \item[-] Delineated coal deposits through field surveys, analysis \& interpretation of well-logging and electrical profiling data\\ 
@@ -196,7 +222,7 @@ $-$ \color{headings}{Geophysicist} | Central Mine Planning and Design Institute,
 \end{center}
 
 \vspace{-0.5em}
-\section{\color{headings}leadership experience | extracirricular}
+\section{\color{headings}leadership experience | extracurricular}
 \color{text1}
 \begin{center}
 \begin{itemize}
@@ -207,7 +233,7 @@ $-$ \color{headings}{Geophysicist} | Central Mine Planning and Design Institute,
 \bulltetspace
 \item[-] Organized an image-processing event in Kshitij 2010 drawing participation from all over India\\
 \bulltetspace
-\item[-] Guitar enthusiast, have played at competitions during the undergraduate years
+\item[-] Interests :  Tech-DIY $\star$ Basketball $\star$ Card games $\star$ Guitar $\star$ Traveling 
 
 \bulltetspace
 \end{itemize}

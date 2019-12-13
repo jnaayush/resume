@@ -1,5 +1,5 @@
   
-\documentclass[a4paper, 10pt, oneside]{article}
+\documentclass[letterpaper, 10pt, oneside]{article}
 \usepackage{soul} % Used for the title name
 \usepackage{titlesec}
 \usepackage{marvosym} % add the symbols for email and phone contact data
@@ -8,10 +8,7 @@
 \usepackage{courier}
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 \usepackage{fontawesome}
-%\definecolor{headings}{HTML}{1e6a1d} % Dark green color for headings
 \definecolor{headings}{HTML}{000000} %dark black
-%\definecolor{text1}{HTML}{474747} % Main document font color, off-black
-%\definecolor{text1}{HTML}{494949}
 \definecolor{text1}{HTML}{000000}
 \usepackage[none]{hyphenat} % Prevents hyphenation in text
 \usepackage{tfrupee}
@@ -42,7 +39,8 @@
 \renewcommand\headrulewidth{0pt} % Size of the header rule
 \renewcommand\footrulewidth{0.000pt} % Size of the footer rule
 \newcommand{\headingspace}{\vspace{9em}}
-\newcommand{\bulltetspace}{\vspace{-0.2em}}
+\newcommand{\bulltetspace}{\vspace{-0.3em}}
+\newcommand{\sectionspace}{\vspace{-1em}}
 \usepackage[pdfborder={0 0 0},bookmarks=true,pdftitle={Aayush Jain's CV},pdfauthor={Aayush Jain},pdfsubject={Curriculum Vitae},pdfcreator={www.google.com},pdfproducer={www.google.com}]{hyperref}
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,98 +48,203 @@
 \begin{document}
 
 %%%%%%  NAME AND CONTACT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{-0.5em}
 \begin{center}
 \color{headings}\textsc{\Huge{{aayush jain}}} \\
 \vspace{0.0em}
-\raggedright \color{text1}{\Large\Telefon} (617) 849-0948 \hspace{12em}137, Park Drive, Boston 02215 \hspace{7.3em} {\Large\Letter} \href{mailto:jain.aa@husky.neu.edu}{jain.aa@husky.neu.edu} 
+\raggedright \color{text1}{\Large\Telefon} 6178490948 
+\hspace{13.8em}1197, Boylston St, Boston 02215 \hspace{8.6em} {\Large\Letter} \href{mailto:jain.aa@husky.neu.edu}{jain.aa@husky.neu.edu} 
+%\raggedright \color{text1}{\Large\Telefon} 6178490948 
+%\hspace{20.5em}1197, Boylston St, Boston 02215 \hspace{9em} {\Large\Letter} \href{mailto:jain.aa@husky.neu.edu}{jain.aa@husky.neu.edu} 
 
 \vspace{-0.0em}
 \raggedright
 %{\Large\faLinkedin} \href{https://www.linkedin.com/in/aayush-jain-37319048/}{\ aayush-jain-37319048}
 {\Large\faGithub} \href{https://github.com/jnaayush}{\ jnaayush}
-\hspace{13.25em} {\fontseries{b}\selectfont Available: January - August 2019}  
-\hspace{6.8em}  {\Large\faLinkedin} \href{https://www.linkedin.com/in/aayush-jain-37319048/}{\ aayush-jain-37319048}
+\hspace{16.5em} {\fontseries{b}\selectfont Available : Jan 2020}  
+\hspace{11.8em}  {\Large\faLinkedin} \href{https://www.linkedin.com/in/jnaayush}{\ jnaayush}
+
+\vspace{0.5 em}
+\textbf{Objective: }Result oriented professional with over 3 years experience looking to transfer my skills to tech industry. My proven mathematical, analytical skills and impressive educational background make me an ideal fit for software developer position.
 
 %%%%%%  EDUCATION  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.3em}
-\section{\color{headings} education}
+\sectionspace
+\section{\color{headings}\large\textbf{EDUCATION}}
 \vspace{-0.5em}
 \color{headings}{\textbf{NORTHEASTERN UNIVERSITY}, BOSTON, MA} \hfill {Expected Dec 2019}\\
-\raggedright \textbf{College of Computer and Information Science}\\
-Candidate for Master of Science in Computer Science\hfill {GPA 3.89}\\
-\begin{itemize}
-\vspace{-0.7em}
-\item[$\bullet$]\raggedright{Course Work:} Computer Systems, Algorithms, Object Oriented Design, Discrete and Data Structure
-\vspace{-0.7em}
-\item[] Machine Learning (Ongoing), Information Retrieval (Ongoing) \\
-\end{itemize}
-
+Candidate for Master of Science in Computer Science\hfill {GPA 3.88}\\
+\textit{Course Work:} Machine Learning, Information Retrieval, Computer Systems, Algorithms, Database Management Systems, Natural Language Processing, Parallel Data Processing \\
+\vspace{0.5em}
 \color{headings}{\textbf{INDIAN INSTITUTE OF TECHNOLOGY (IIT)}, KHARAGPUR, INDIA} \hfill {Jul 2009 - Jun 2014}\\
-\color{text1}{Bachelors (Honors) \& Masters (Honors) of Science in Geophysics} \hfill\\% {GPA 8.01/10}\\
-\begin{itemize}
-\vspace{-0.7em}
-\item[$\bullet$] \raggedright{Relevant Courses:} Programming and Data Structure, Partial Differential Eqn, Signal Processing\\%, Measurements and Electronic Instruments\\
- \bulltetspace
-\item[$\bullet$] Recipient of I.N.S.P.I.R.E. scholarship from Department of Science \& Technology, Government of India\\
-\vspace{-1.2 em}
-\end{itemize}
+\color{text1}{Bachelors (Honors)  \& Masters (Honors) of Science in Exploration Geophysics}. Recipient of INSPIRE scholarship\\ 
+\textit{Relevant courses:} Transform Calculus, Signal Processing, Inverse Theory, Mathematical Modeling, Linear Algebra
 \end{center}
 
+\vspace{-0.5em}
+
+
+
+%%%%%%  Technical Knowledge  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionspace
+\section{\color{headings} \large\textbf{TECHNICAL SKILLS}}
+\vspace{-0.8em}
+\color{text1}
+\raggedright
+\begin{tabular}{l l}
+Languages: & C, C++, Java, Python, SQL, Javascript, Scala, HTML, CSS, XML\\
+Tools: & IntelliJ Idea, Eclipse, PyCharm, Xcode, Maven, VIM, Linux, Git, JIRA,  \\
+Frameworks : &React, NodeJS, MeteorJS, Hadoop, Spark, Spring, JSP, AWS (S3, EMR, EC2, CLI),  GCP\\
+Machine Learning : & Scikit, Nltk, Pandas, Numpy, TensorFlow, PyTorch, Supervised and Unsupervised Learning
+%add Course algorithms%
+%Systems: & UNIX, Windows, Macintosh OS\\
+%IDE: & IntelliJ Idea, Xcode, Vim\\
+\end{tabular}
+
+\sectionspace
+\vspace{0.1em}
+
+
+%%%%%%  WORK EXPERIENCE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\section{\color{headings} \large\textbf{WORK EXPERIENCE}}
+\vspace{-0.5em}
+\color{headings}\textbf{Software Engineer Intern} | \textbf{Secure AI Labs (MIT delta-v), Cambridge, MA} \hfill Jan 2019 - Jul 2019
+\vspace{-0.3em}
+\begin{itemize} 
+\bulltetspace
+\item[$\bullet$] \textbf{Updated} platform \& added \textbf{new functionalities} to software for sharing and analysis of healthcare data using privacy preserving machine learning algorithms \\
+\bulltetspace
+\item[$\bullet$] Gained an \textbf{in-depth understanding} of sizable C/C++/Python code base, modified existing programs, tested \& documented the updates and enhanced product as per client requirements \\
+\bulltetspace
+\item[$\bullet$] Programmed frontend and backend \textbf{web modules} in React, NodeJS and MeteorJS for \textbf{decentralized application} \\
+%\bulltetspace
+%\item[$\bullet$] Attended client meetings to gather requirements, coordinated with parters and recommended project plans to CTO\\
+
+%\bulltetspace
+%\item[$\bullet$] \textbf{Researched} the best solutions to write accurate codes for development on Intel SGX secure enclaves\\
+%\bulltetspace
+%\item[$\bullet$] Built a \textbf{secure communication channel} between Intel enclaves using  REST API and ECDH key exchange protocol \\
+\vspace{-0.2em}
+\end{itemize}
+
+
+%\vspace{-0.4em}
+\color{headings}\textbf{Product Developer} | \textbf{Sensovision Systems, Bangalore, India} \hfill Aug 2016 - Aug 2017
+\vspace{-0.2em}
+\color{text1}
+\begin{itemize}
+\bulltetspace
+\item[$\bullet$] \textbf{Eliminated} post production manual quality check by developing \textbf{optical sorting} machine using \color{headings}\textbf{OpenCV} \\
+\bulltetspace
+\item[$\bullet$] \textbf{Customized} open source \textbf{softwares}  to fast track prototype development and reduce development cost\\
+\vspace{-0.2em}
+\end{itemize}
+
+\color{headings}\textbf{Computer Science Teaching Assistant}  | \textbf{Northeastern University, Boston, MA} \hfill Jan 2018 - Dec 2018
+\vspace{-0.2em}
+\begin{itemize} 
+\bulltetspace
+\color{text1}
+\item[$\bullet$] \textbf{Guided 1}00+ students to help reinforce concepts, complete assignments and improve academic performance\\
+\bulltetspace
+\item[$\bullet$] \textbf{Monitored} students' \textbf{progress} and provided feedback for \textbf{five} different \textbf{courses} over three semesters\\
+\vspace{-0.2em}
+\end{itemize}
+
+%\vspace{-0.4em}
+
+%\vspace{-0.4em}
+\color{headings}\textbf{Geophysicist} | \textbf{Central Mine Planning and Design Institute, Nagpur, India} \hfill Aug 2014 - Mar 2015
+\color{text1}
+\vspace{-0.1em}
+\begin{itemize}
+\bulltetspace
+\item[$\bullet$] \textbf{Automated} geophysical data plotting and visualization by writing AutoCAD scripts, reduced processing time by half\\ 
+\bulltetspace
+\item[$\bullet$] \textbf{Analyzed \& interpreted} data using curve matching for qualitative \& quantitative assessment of coal deposits\\
+\vspace{-0.2em}
+\end{itemize}
+
+\color{headings}\textbf{Tech Associate}  | \textbf{Rishab Academy, Bhopal, India} \hfill May 2015 - Jul 2016
+\color{text1}
+\vspace{-0.2em}
+\begin{itemize}
+\bulltetspace
+\item[$\bullet$]  \textbf{Oversaw} development \& \textbf{collaborated} with software developers to build and deploy an online examination platform\\
+\vspace{-0.2em}
+\end{itemize}
+
+
+\end{center}
+\vspace{0.1em}
+\sectionspace
 
 
 %%%%%%  ACADEMIC PROJECT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
-\vspace{-0.3em}
 
-\section{\color{headings}academic projects}
+\section{\color{headings} \large\textbf{ACADEMIC PROJECTS}}
 \vspace{-0.5em}
 
-%$-$ \color{headings}{Focussed web crawler} {(Python, Beautiful Soup)}  \hfill Jul 2018 - Aug 2018\\
-%\color{text1}
-%\begin{itemize}
-%\bulltetspace
-%\item[-] Making a web crawler with seed as wikipedia.com and with crawl depth of 6\\
-%\end{itemize}
-
-%\textbf{$-$}
-
-\color{headings}\textbf{Web Crawler} \textit{(Python, Beautiful Soup, Algorithms)} \hfill Sep 2018 - Ongoing
+\color{headings}\textbf{Stock Smart: Stock Trade Suggestions} \textit{(SQL, Java, XML, ETL, JDBC, JSP)} \hfill  May 2018 - Aug 2019
 \color{text1}
-\vspace{-0.3em}
+\vspace{-0.2em}
 \begin{itemize}
 \bulltetspace
-\item[$\bullet$] Created \textbf{Breadth First Search} web crawler to scrape 1000 wikipedia articles on MacintoshOS\\
+\item[$\bullet$] Designed a \textbf{relational model \& database} to store \& retrieve stock data to help user understand patterns of stock trade \\
 \bulltetspace
-\item[$\bullet$] Parsed HTML pages; constructed \textbf{directed web graph} \& implemented \textbf{page rank algorithm} to assign page ranks
-\vspace{0.0em}
+\item[$\bullet$] Defined \textbf{ETL workflows}, developed \textbf{JSP web application} with \textbf{JDBC} data access layer for \textbf{CRUD operation}
+\vspace{-0.4em}
 \end{itemize}
+
+
+
+\color{headings}\textbf{Vivid Past: Auto Colorization of Videos} \textit{(Python, Tensorflow, PyTorch, Neural nets, OpenCV)} \hfill Sep 2018 - Dec 2018
+\color{text1}
+\vspace{-0.2em}
+\begin{itemize}
+\bulltetspace
+\item[$\bullet$] Collaborated with 3 colleagues to attempt problem of \textbf{colorization of b/w videos} leveraging semantic segmentation\\
+\bulltetspace
+\item[$\bullet$]  Employed InceptionResnet for semantic segmentation, built and trained auto-encoders with output of segmentation 
+\vspace{-0.4em}
+\end{itemize}
+
+
+%\color{headings}\textbf{Search Engine for Wikipedia} \textit{(Python, Beautiful Soup, Algorithms)} \hfill Sep 2018 - Dec 2018
+%\color{text1}
+%\vspace{-0.2em}
+%\begin{itemize}
+%\bulltetspace
+%\item[$\bullet$] Created \textbf{Breadth First Search} web crawler to scrape wikipedia articles, create inverted lists for corpus\\
+%\bulltetspace
+%\item[$\bullet$] Assigned \textbf{page rank} and \textbf{page relevance} score for query term by making \textbf{language model} with Dirichlet Smoothing\\
+%\vspace{-0.2em}
+%\end{itemize}
 
 
  \color{headings}\textbf{Performance Analysis of Sorting Algorithms} \textit{(C, Python, libperf, matplotlib, numpy)}  \hfill Jul 2018 - Aug 2018
 \color{text1}
-\vspace{-0.3em}
+\vspace{-0.2em}
 \begin{itemize}
 \bulltetspace
-\item[$\bullet$] Developed a  \textbf{tool} to  \textbf{study sorting a}lgorithms on metrics such as cache misses, page faults in Linux environment\\
+\item[$\bullet$] Devised a \textbf{tool} to \textbf{study sorting a}lgorithms on kernel metrics such as cache misses, page faults in Linux environment\\
 \bulltetspace
-\item[$\bullet$] \textbf{Automated} selection of sorts, generation of data and plotting results on graph to  \textbf{cut down} stud\textbf{y time} by 80\% \\
-\bulltetspace
-\item[$\bullet$]  \textbf{Presented report} to instructor explaining results and inferring differential behavior of sorts
-\vspace{0.0em}
+\item[$\bullet$] \textbf{Automated} selection of algorithms, generation of data and graphs of result to \textbf{cut down} stud\textbf{y time} by 80\% \\
+\vspace{-0.2em}
 \end{itemize}
 
 %\vspace{-0.3em}
 %\textbf{$-$} 
-\color{headings}\textbf{Animation generator based on MVC design pattern} \textit{(Java, Swing, Awt, Xml)} \hfill Mar 2018 - Apr 2018
+\color{headings}\textbf{Animation generator based on MVC design pattern} \textit{(Java, Swing, Xml)} \hfill Mar 2018 - Apr 2018
 \color{text1}
-\vspace{-0.3em}
+\vspace{-0.2em}
 \begin{itemize}
 \bulltetspace
 \item[$\bullet$] Pair-programmed to generate \textbf{GUI} based SVG animation viewer and its text transcript by processing input file\\
 \bulltetspace
-\item[$\bullet$] Followed \textbf{factory design} pattern to generated views based on user input and allow addition of new views types
-\vspace{0.0em}
+\item[$\bullet$] Followed \textbf{factory design} pattern to generate views based on user input and allow addition of new views types
+\vspace{-0.2em}
 \end{itemize}
 
 %\vspace{-0.3em}
@@ -160,108 +263,36 @@ Candidate for Master of Science in Computer Science\hfill {GPA 3.89}\\
 
 %\vspace{-0.3em}
 %\textbf{$-$}
-\color{headings}\textbf{Explode : Robotics Competition, Kshitij 2010} \textit{(C, GDB, Graph algorithms)} \hfill Dec 2009 - Jan 2010
-\color{text1}
-\vspace{-0.3em}
-\begin{itemize}
-\bulltetspace
-\item[$\bullet$] Built t\textbf{wo autonomous robots} to navigate a grid to detect land mines \& traverse grid again avoiding land mines\\
-\bulltetspace
-\item[$\bullet$] Implemente\textbf{d shortest path algorithm} to traverse grid in shortest time \& \textbf{debugged} 1500+ lines of code in GDB \\
-\bulltetspace
-\item[$\bullet$] \textbf{Finished $2^{nd}$} in largest robotics competition in eastern India along with 3 team members
-\vspace{0.0em}
-\end {itemize}
-\end{center}
-
-%%%%%%  technical knowledge  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\vspace{-1em}
-\section{\color{headings}technical knowledge}
-\vspace{-0.5em}
-\color{text1}
-\raggedright
-\begin{tabular}{l l}
-Languages: & C, Java, Python, C++, HTML, CSS\\
-Tools: & IntelliJ Idea, Xcode, Pycharm, VIM, Git, Android Studio\\
-%add Course algorithms%
-%Systems: & UNIX, Windows, Macintosh OS\\
-%IDE: & IntelliJ Idea, Xcode, Vim\\
-\end{tabular}
-
-
-
-%%%%%%  WORK EXPERIENCE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{center}
-\vspace{-1.em}
-\section{\color{headings}work experience}
-\vspace{-0.5em}
-\color{headings}\textbf{Teaching Assistant}  \hfill \textbf{Northeastern University, Boston, MA} \hfill Jan 2018 - Present
-\vspace{-0.3em}
-\begin{itemize} 
-\bulltetspace
-\item[$\bullet$] Courses: Discrete \& Data Structure \textbf{|} Algorithms \textbf{|}  Computer Systems \textbf{|}  Object Oriented Design \textbf{|} Foundations of CS\\
-\bulltetspace
-\color{text1}
-\item[$\bullet$] \textbf{Guiding 1}00+ students to help reinforce concepts, complete assignments and improve academic performance\\
-\bulltetspace
-\item[$\bullet$] \textbf{Monitoring} students' \textbf{progress} and assisting professor in \textbf{grading} weekly assignments, conducting labs \& quizzes \\
-\end{itemize}
-
-%\vspace{-0.4em}
-\color{headings}\textbf{Product Developer} \hfill \textbf{SensoVision Systems, Bangalore, India} \hfill Aug 2016 - Aug 2017
-\vspace{-0.3em}
-\color{text1}
-\begin{itemize}
-\bulltetspace
-\item[$\bullet$] \textbf{Envisioned} \& developed an \textbf{optical sorting} machine using \color{headings}\textbf{OpenCV} to eliminate manual quality check by 100\% \\
-\bulltetspace
-\item[$\bullet$] \textbf{Customized} 2 open source \textbf{softwares} by adding new features to fast track prototype development\\
+%\color{headings}\textbf{Explode : Robotics Competition, Kshitij 2010} \textit{(C, GDB, Graph algorithms)} \hfill Dec 2009 - Jan 2010
+%\color{text1}
+%\vspace{-0.3em}
+%\begin{itemize}
 %\bulltetspace
-%\item[$\bullet$] Defined hardware specifications, negotiated with suppliers and procured camera systems \& illumination systems\\
-\bulltetspace
-\item[$\bullet$] Re-designed and created company website resulting in an increase in hit rate by 2x
-
-\end{itemize}
-
-%\vspace{-0.4em}
-\color{headings}\textbf{Teaching Associate}  \hfill \textbf{R.A.C.E., Bhopal, India} \hfill May 2015 - Jul 2016
-\color{text1}
-\vspace{-0.3em}
-\begin{itemize}
-\bulltetspace
-\item[$\bullet$] \textbf{Taught Mathematics} \& prepared practice material; received high remarks for creativity of classroom lessons\\
-\end{itemize}
-
-%\vspace{-0.4em}
-\color{headings}\textbf{Geophysicist}  \hfill \textbf{Central Mine Planning and Design Institute, Nagpur, India} \hfill Aug 2014 - May 2015
-\color{text1}
-\vspace{-0.3em}
-\begin{itemize}
-\bulltetspace
-\item[$\bullet$] Discovered coal deposits through analysis, classification \& interpretation of well-logging and electrical profiling data\\ 
-\bulltetspace
-\item[$\bullet$] \textbf{Reduced expenses b}y 20\% in combined drill bit cost \& man hours by locating \& avoiding subsurface volcanic rocks\\
-\bulltetspace
-\end{itemize}
-
+%\item[$\bullet$] Built t\textbf{wo autonomous robots}; implemente\textbf{d shortest path algorithms}  \& \textbf{debugged} 1500+ lines of code in GDB \\
+%\bulltetspace
+%\item[$\bullet$] \textbf{Finished $2^{nd}$} in largest robotics competition in eastern India along with 3 team members
+%\vspace{0.0em}
+%\end {itemize}
 \end{center}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LEADERSHIP EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.5em}
-\section{\color{headings}extracurricular}
-\color{text1}
-\begin{center}
-\begin{itemize}
-\bulltetspace
-\item[$\bullet$] Awarded Best Outgoing Sportsman, Patel Hall for medals and contributions in athletics, basketball \& waterpolo\\
-\bulltetspace
-\item[$\bullet$] Led a team of 7 for organizing and executing basketball competition in annual sports fest of IIT Kharagpur\\
-\bulltetspace
-\item[$\bullet$] Interests :  Tech-DIY $\star$ Basketball $\star$ Card games $\star$ Guitar $\star$ Traveling 
-
-\bulltetspace
-\end{itemize}
-\end{center}
-\vspace{-1em}
+\hrule
+%\sectionspace
+%\section{\color{headings}additional information}
+%\color{text1}
+%\begin{center}
+%\begin{itemize}
+%\bulltetspace
+%\item[$\bullet$] 
+\vspace{0.5em}
+%\textbf{ExtraCurricular}: Awarded Best Sportsman, 2014 for contributions in basketball, athletics \& waterpolo, part of eastern music group as a rythm guitarist for Patel Hall, IIT Kharagpur.
+Interests: Basketball, Chess, Card Games, TechDIY
+%\bulltetspace
+%\item[$\bullet$]
+%\bulltetspace
+%\end{itemize}
+%\end{center}
+\vspace{0em}
 \end{document}
